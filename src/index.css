@@ -1,0 +1,273 @@
+/*#region Variables, Reset, General & Body ----------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Tektur&display=swap');
+:root {
+  --primary-dark-color: #BDE038;
+  --primary-light-color: #10454F;
+  --colorhover: #D9D9D9;
+  --fontTitles  : 'Tektur', cursive;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  background-color: var(--colorhover);
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/*#endregion */
+
+/*#region Header ------------------------------------------------------------------------------- */
+
+/* See navbar.css file */
+
+/*#endregion */
+
+/*#region Footer ------------------------------------------------------------------------------- */
+
+footer {
+  width: 100%;
+  color: var(--primary-light-color);
+  background-color: var(--primary-dark-color);
+  font-size: 0.8rem;
+  text-align: center;
+  margin: 0 auto 0;
+  padding: 0.5rem 0;
+  
+}
+
+footer h4 {
+  font-family: var(--fontTitles);
+}
+.footer {
+  width: 32%;
+}
+
+
+.contenido {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.contenido ul {
+  list-style: none;
+  
+ 
+}
+
+.contenido li a  {
+  text-decoration: none;
+  color: #10454F;
+  margin: 1rem;
+}
+
+
+
+/*#endregion */
+
+/*#region Divs --------------------------------------------------------------------------------- */
+
+.container {
+  width: 80%;
+  margin: 0 auto 2em;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+/*#endregion */
+
+/*#region Specific for Settings screen --------------------------------------------------------- */
+
+.setting p {
+  margin: 2em 0 0.4em 0;
+}
+
+button {
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  color: #333;
+  background-color: #f2f2f1;
+  border: 0;
+  outline: none;
+  width: 10em;
+  height: 2.5em;
+}
+
+.btn-selected {
+  background-color: var(--primary-dark-color);
+  color: #fff;
+}
+
+/*#endregion */
+
+/*#region Specific for Questions screen ----------------------------------------------------------- */
+
+.bg-quiz {
+  background-color: #D9D9D9;
+}
+
+
+.points {
+  background-color: var(--primary-light-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  z-index: -1;
+}
+
+.points h4 {
+  font-family: var(--fontTitles);
+  color: var(--colorhover);
+  font-style: italic;
+}
+
+.points span {
+  color: var(--primary-dark-color);
+  font-family: var(--fontTitles);
+  font-size: 1.5rem;
+}
+
+
+.questions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  min-height: 100vh;
+  flex-wrap: wrap;
+  margin: 2em auto;
+  gap: 2rem;
+}
+
+.questions .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #10454F;
+  text-align: center;
+  width: 300px;
+  height: 600px;
+  padding: 1em;
+  box-shadow: 10px 10px 30px #323050;
+  background: var(--primary-dark-color);
+  border-radius: 3rem;
+}
+
+.questions .card h2 {
+  font-size: 1.3rem;
+  font-family: var(--fontTitles);
+  text-transform: uppercase;
+  background-color: var(--primary-light-color);
+  color: var(--primary-dark-color);
+  margin: 0 auto 1em;
+  padding: 0.3em 1em 0.1em;
+}
+
+.questions .card p {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.questions .card p.difficulty {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #818274;
+  background-color: yellowgreen;
+  margin: 0 auto 1em;
+  padding: 0.25em 1em;
+}
+
+.questions .card p.question {
+  font-size: 0.9rem;
+  margin: 1em auto;
+}
+
+.questions .card p.answer {
+  font-size: 0.9rem;
+  font-weight: normal;
+  background-color: white;
+  margin-top: 1.5em;
+  padding: 0.8em 0.5em;
+  width: 80%;
+  cursor: pointer;
+  border-radius: 1rem;
+  transition: .5s;
+}
+
+
+.questions .card .message {
+  margin-top: 1rem;
+}
+
+
+.questions .card p.answer:hover{
+  background-color: var(--primary-light-color);
+  color: var(--colorhover);
+}
+
+/*#endregion */
+
+/*#region Specific for About screen ------------------------------------------------------------ */
+
+.about h2 {
+  font-size: 3rem;
+  color: var(--primary-light-color);
+  font-family: var(--fontTitles);
+}
+
+.about p {
+  width: 50%;
+  text-align: justify;
+  margin-bottom: 3em;
+}
+
+/*#endregion */
+
+/*#region Specific for Error 404 screen -------------------------------------------------------- */
+
+.not-found {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 8rem;
+  font-weight: 700;
+  color: var(--primary-light-color);
+}
+
+/*#endregion */
+
+.red {
+  color: red;
+  font-size: 8rem;
+
+}
+
+.green {
+  color: green;
+  font-size: 8rem;
+}
+
+.bx-cool{
+  color: yellow;
+
+}
+
+
+.bxs-dizzy {
+  color: lightcoral;
+}
+
+
+
