@@ -13,8 +13,7 @@ console.log(text)
       >
         {first}
       </button>
-      {/* TODO #8
-      /// Afegeix el segon botó de cada Setting perquè es mostri i funcioni com al vídeo. */}
+    
         <button
         onClick={(e) => updateSetting(property, e.target.textContent)}
         className={settings[property] === second ? 'btn-selected' : ''}

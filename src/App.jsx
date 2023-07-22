@@ -1,5 +1,4 @@
-// TODO #11 --
-// Afegeix els `import` que manquen per poder treballar amb rutes.
+
 import Footer from './components/Footer'
 import Header from './components/Header'
 import About from './components/About'
@@ -22,8 +21,7 @@ function App() {
         <Points />
         <Routes>
           <Route path='/'  element={<Questions />} />
-          {/* TODO  #12 --
-          /// Afegeix rutes per la pàgina About i per la pàgina Settings. */}
+
           <Route  path='/about' element= {<About/>}/>
           <Route  path='/settings' element= {<Settings/>}/>
           <Route path='*' element={<NotFound />} />
