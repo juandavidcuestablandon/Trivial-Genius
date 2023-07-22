@@ -14,7 +14,7 @@ export const PointsProvider = ({children}) => {
       };
     
       const decrement = () => {
-        if (points > 1) {
+        if (points > 0) {
           setPoints(points - 1);
         }
       };
