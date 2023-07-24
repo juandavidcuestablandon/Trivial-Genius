@@ -1,6 +1,7 @@
 
 
 const GameOver = () => {
+  alert('Game Over')
  return (
     <div><h2 className="red">
       GAME OVER

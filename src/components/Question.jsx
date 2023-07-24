@@ -67,7 +67,7 @@ const Question = ({ category, type, difficulty, question, correctAnswer, incorre
         ))}
      
 
-           <p className='message' onClick={increment}> 
+           <p className='message' > 
             {isAnswerCorrect ? `Correct! is ${correctAnswer}` : (isAnswerCorrect === null) ? "" :  `Incorrect is ${correctAnswer}`}</p>
 
       </div>
